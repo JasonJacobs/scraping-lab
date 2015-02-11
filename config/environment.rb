@@ -1,2 +1,2 @@
-require_relative '../lib/student_cli'
-require_relative '../lib/scraper'
+require_relative '../lib/student_cli.rb'
+require_relative '../lib/scraper.rb'
