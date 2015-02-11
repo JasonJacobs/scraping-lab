@@ -59,12 +59,3 @@ def create_student_hash
   end
   people
 end
-
-
-# class Student
-#   def initialize
-#     @name = get_student_names[iterate through index]
-#     @bio = get_student_bios
-#     @edu = get_student_education
-#     @cred = get_student_cred
-

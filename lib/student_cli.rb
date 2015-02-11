@@ -24,13 +24,14 @@ def help
 end
 
 def command
-  puts "Please enter a command"
+  puts "Please enter a valid command"
   input = gets.downcase.strip 
   case input
   when "exit"
     exit
   when "help"
     help
+    command
   when "list names"
     list_names
     command
@@ -38,7 +39,6 @@ def command
     profile
     command
   else
-    puts "Please enter a valid command"
     command
   end
 end
@@ -67,13 +67,7 @@ def profile
   puts ""
   puts "Work:\n#{students[student_index][:work]}"
   puts ""
-  puts "Coder Cred:\n#{students[student_index][:coder_cred]}"
+  puts "Coder Cred:"
+  students[student_index][:coder_cred].each {|link| puts link}
   puts ""
 end
-
-run
-
-
-
-
-
